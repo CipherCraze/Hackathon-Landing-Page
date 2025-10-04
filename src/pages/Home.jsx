@@ -24,7 +24,6 @@ function Home() {
         <CallToAction />
   <Prizes />
   <Sponsors />
-        <Gallery />
         <Team />
         <FAQ />
         <Contact />

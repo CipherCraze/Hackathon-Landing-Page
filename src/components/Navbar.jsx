@@ -39,12 +39,7 @@ function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          <a
-            href="#register"
-            className="rounded-full border border-deepgreen/20 px-5 py-2 text-sm font-semibold uppercase tracking-wide text-deepgreen transition hover:border-saffron/60 hover:text-saffron"
-          >
-            Themes Scroll
-          </a>
+          
           <a
             href="#register"
             className="rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 py-2.5 text-sm font-bold uppercase tracking-widest text-charcoal shadow-kasavu transition hover:brightness-110"
