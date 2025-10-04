@@ -1,44 +1,43 @@
-
-
 const prizeTiers = [
   {
-    label: 'First Prize',
-    amount: 'Rs. 5,000',
-    perks: 'Fast-track incubation + hardware goodies',
+    label: 'Thiruvonam Champion',
+    amount: '₹ 15,000',
+    perks: 'Incubation with Kerala Startup Mission + heritage showcase residency',
   },
   {
-    label: 'Second Prize',
-    amount: 'Rs. 3,000',
-    perks: 'Cloud credits + mentorship immersion',
+    label: 'Vallamkali Runner-up',
+    amount: '₹ 10,000',
+    perks: 'Tourism department pilot + mentorship with storytellers',
   },
   {
-    label: 'Third Prize',
-    amount: 'Rs. 2,000',
-    perks: 'Design sprint with partner studio',
+    label: 'Kathakali Spotlight',
+    amount: '₹ 5,000',
+    perks: 'CultureTech fellowship + studio-grade content package',
   },
 ]
 
 const extras = [
-  'Gadget hampers',
-  'Internship opportunities',
-  'Exclusive AI toolkits',
-  'Travel grants for top student teams',
+  'Onam sadhya experience with jury and partners',
+  'Access to Creative Kerala innovation grants',
+  'Co-working passes at FabLabs across the state',
+  'Media features on Malayali tech channels',
 ]
 
 function Prizes() {
   return (
-    <section id="prizes" className="relative overflow-hidden bg-slate-950/90 py-24">
+    <section id="prizes" className="relative overflow-hidden bg-gradient-to-br from-ivory via-white to-ivory py-24">
       <div className="absolute inset-0">
-        <div className="absolute left-1/3 top-20 h-80 w-80 -translate-x-1/2 rounded-full bg-gradient-to-br from-amber-400/30 via-orange-500/20 to-pink-500/30 blur-3xl" />
-        <div className="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-gradient-to-tl from-indigo-500/30 via-blue-500/20 to-transparent blur-3xl" />
+        <div className="absolute left-1/3 top-20 h-80 w-80 -translate-x-1/2 rounded-full bg-gradient-to-br from-kasavu/30 via-saffron/20 to-vermilion/25 blur-3xl" />
+        <div className="absolute bottom-10 right-10 h-64 w-64 rounded-full bg-gradient-to-tl from-deepgreen/25 via-deepgreen/15 to-transparent blur-3xl" />
       </div>
 
-      <div className="relative mx-auto w-full max-w-7xl px-6">
+      <div className="relative mx-auto w-full max-w-7xl px-6 text-charcoal">
         <div className="flex flex-col gap-4 text-left sm:text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">Prizes</span>
-          <h2 className="text-3xl font-black text-white sm:text-4xl">Prize pool & futuristic perks</h2>
-          <p className="max-w-3xl text-sm text-slate-400 sm:mx-auto">
-            Placeholder text: highlight your prize structure, partner rewards, and ongoing support opportunities for winning teams.
+          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-deepgreen">Prizes</span>
+          <h2 className="font-heading text-3xl font-black sm:text-4xl">Kasavu-clad recognitions &amp; real-world pilots</h2>
+          <p className="max-w-3xl text-sm text-charcoal/75 sm:mx-auto">
+            Celebrate with rewards rooted in Kerala&apos;s culture and future. Winning teams receive cash prizes, pilot opportunities,
+            and a spotlight in the Code-Kalari cultural showcase tour.
           </p>
         </div>
 
@@ -47,32 +46,32 @@ function Prizes() {
             {prizeTiers.map((tier) => (
               <div
                 key={tier.label}
-                className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-6 shadow-xl"
+                className="relative overflow-hidden rounded-3xl border border-kasavu/30 bg-white/90 p-6 shadow-lg transition hover:-translate-y-1"
               >
-                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-amber-400/30 via-orange-500/20 to-pink-500/30 opacity-0 blur-2xl transition duration-500 hover:opacity-100" />
-                <p className="text-xs uppercase tracking-[0.35em] text-amber-300">{tier.label}</p>
-                <p className="mt-4 text-2xl font-bold text-white">{tier.amount}</p>
-                <p className="mt-3 text-sm text-slate-300">{tier.perks}</p>
+                <div className="absolute inset-0 -z-10 bg-gradient-to-br from-kasavu/30 via-saffron/20 to-vermilion/25 opacity-0 blur-2xl transition duration-500 hover:opacity-100" />
+                <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">{tier.label}</p>
+                <p className="mt-4 text-2xl font-bold text-charcoal">{tier.amount}</p>
+                <p className="mt-3 text-sm text-charcoal/70">{tier.perks}</p>
               </div>
             ))}
           </div>
-          <div className="rounded-3xl border border-amber-400/40 bg-slate-950/80 p-6 shadow-[0_0_35px_rgba(249,115,22,0.2)]">
-            <p className="text-xs uppercase tracking-[0.35em] text-amber-300">Beyond prizes</p>
-            <h3 className="mt-3 text-lg font-semibold text-white">All finalist teams unlock:</h3>
-            <ul className="mt-4 space-y-3 text-sm text-slate-200">
+          <div className="rounded-3xl border border-deepgreen/20 bg-white/90 p-6 shadow-[0_0_35px_rgba(15,81,50,0.18)]">
+            <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Beyond prizes</p>
+            <h3 className="mt-3 text-lg font-semibold text-charcoal">All finalist teams unlock:</h3>
+            <ul className="mt-4 space-y-3 text-sm text-charcoal/75">
               {extras.map((extra) => (
                 <li key={extra} className="flex items-center gap-3">
-                  <span className="inline-flex h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-pink-500" />
+                  <span className="inline-flex h-2 w-2 rounded-full bg-gradient-to-r from-deepgreen to-vermilion" />
                   {extra}
                 </li>
               ))}
             </ul>
-            <p className="mt-6 text-xs text-slate-400">
-              Update with actual rewards and extend CTA for detailed prize policy.
+            <p className="mt-6 text-xs text-charcoal/60">
+              Detailed prize policy includes eligibility, disbursement timelines, and post-hackathon mentorship commitments.
             </p>
             <a
-              href="#prize-policy"
-              className="mt-4 inline-flex items-center rounded-full border border-white/10 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.4em] text-amber-200 transition hover:border-amber-300 hover:text-amber-100"
+              href="https://code-kalari.in/prize-policy"
+              className="mt-4 inline-flex items-center rounded-full border border-kasavu/35 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.4em] text-deepgreen transition hover:border-saffron/60 hover:text-saffron"
             >
               Download Prize Policy
             </a>

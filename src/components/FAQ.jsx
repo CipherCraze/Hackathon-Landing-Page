@@ -3,24 +3,29 @@ import { FiMinus, FiPlus } from 'react-icons/fi'
 
 const faqs = [
   {
-    question: 'What is CipherThon 2.0?',
+    question: 'What makes Code-Kalari unique?',
     answer:
-      'Placeholder answer: Describe your hackathon mission, the type of participants you welcome, and the overall experience.',
+      'It is Kerala’s cultural hackathon blending kalari discipline with tech innovation. Expect Athapookalam installations, Onam rituals, and local experts guiding you through meaningful impact challenges.',
   },
   {
-    question: 'How do I register?',
+    question: 'Who can apply and how are teams formed?',
     answer:
-      'Share the registration flow, ticketing platform, eligibility, and deadlines. Replace this copy with your real instructions.',
+      'Students, professionals, artists, and community builders are welcome. Apply as a team of 3–5 or join the solo applicant pool—our pre-event kalari circle helps match solo creatives with crews.',
   },
   {
-    question: 'Can I participate remotely?',
+    question: 'Is remote participation supported?',
     answer:
-      'Outline hybrid participation support, remote collaboration tools, and how international teams can join.',
+      'Yes. Remote teams collaborate via our virtual backwater hub with live mentor slots, streaming of rituals, and digital Athapookalam board for updates.',
   },
   {
-    question: 'What is provided during the hackathon?',
+    question: 'What amenities and resources are provided?',
     answer:
-      'Mention swag, snacks, mentors, workstations, API credits, and any pre-event onboarding you plan to offer.',
+      'On-site creators receive co-working zones, yoga nidra pods, Onam sadhya meals, fast Wi-Fi, and hardware lending. All teams access APIs, datasets, design kits, and 24x7 mentor support.',
+  },
+  {
+    question: 'How does judging work?',
+    answer:
+      'Shortlisted teams pitch on the Lotus Stage with a 3-minute demo + 2-minute Q&A. Judges score on cultural resonance, sustainability, user delight, and scalability. Audience vote decides the People’s Lotus.',
   },
 ]
 
@@ -28,17 +33,17 @@ function FAQItem({ question, answer }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="rounded-3xl border border-white/10 bg-white/5">
+    <div className="rounded-3xl border border-kasavu/25 bg-white/90">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         className="flex w-full items-start justify-between gap-4 px-6 py-5 text-left"
       >
         <div className="flex-1">
-          <p className="text-sm font-semibold text-white">{question}</p>
-          {open && <p className="mt-2 text-sm text-slate-300">{answer}</p>}
+          <p className="text-sm font-semibold text-charcoal">{question}</p>
+          {open && <p className="mt-2 text-sm text-charcoal/75">{answer}</p>}
         </div>
-        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-sm text-amber-300">
+        <span className="flex h-10 w-10 items-center justify-center rounded-full border border-kasavu/30 bg-kasavu/15 text-sm text-deepgreen">
           {open ? <FiMinus /> : <FiPlus />}
         </span>
       </button>
@@ -48,13 +53,13 @@ function FAQItem({ question, answer }) {
 
 function FAQ() {
   return (
-    <section id="faq" className="bg-slate-950/95 py-24">
-      <div className="mx-auto w-full max-w-5xl px-6">
+    <section id="faq" className="bg-gradient-to-b from-ivory via-white to-ivory py-24">
+      <div className="mx-auto w-full max-w-5xl px-6 text-charcoal">
         <div className="flex flex-col gap-4 text-center">
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-amber-300">FAQs</span>
-          <h2 className="text-3xl font-black text-white sm:text-4xl">Your questions, answered</h2>
-          <p className="text-sm text-slate-400">
-            Replace these placeholders with actual questions from your participants and embed links to official policies.
+          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-deepgreen">FAQs</span>
+          <h2 className="font-heading text-3xl font-black sm:text-4xl">Answers from the kalari desk</h2>
+          <p className="text-sm text-charcoal/75">
+            Can’t find what you need? Write to <a href="mailto:hello@code-kalari.in" className="underline decoration-dotted underline-offset-4">hello@code-kalari.in</a> or join our Discord for live updates.
           </p>
         </div>
 

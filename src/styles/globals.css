@@ -3,22 +3,37 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  @apply min-h-screen bg-slate-950 text-slate-100 antialiased;
+  @apply min-h-screen bg-ivory text-charcoal antialiased transition-colors duration-500;
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-image: radial-gradient(circle at 20% 20%, rgba(232, 185, 35, 0.12), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(255, 122, 0, 0.18), transparent 50%),
+    radial-gradient(circle at 50% 90%, rgba(15, 81, 50, 0.12), transparent 55%);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: 'Manjari', 'DM Serif Display', 'Georgia', serif;
 }
 
 a {
-  @apply outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950;
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-kasavu/70 focus-visible:ring-offset-2 focus-visible:ring-offset-ivory;
 }
 
 section {
   scroll-margin-top: 120px;
 }
 
-h1 {
-  @apply text-4xl font-bold;
+::-moz-selection {
+  @apply bg-kasavu text-charcoal;
+}
+
+::selection {
+  @apply bg-kasavu text-charcoal;
 }

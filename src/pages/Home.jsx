@@ -9,10 +9,12 @@ import Schedule from '../components/Schedule'
 import Sponsors from '../components/Sponsors'
 import Team from '../components/Team'
 import Themes from '../components/Themes'
+import Gallery from '../components/Gallery'
+import Contact from '../components/Contact'
 
 function Home() {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div className="min-h-screen bg-ivory text-charcoal">
       <Navbar />
       <main className="space-y-0">
         <HeroSection />
@@ -20,10 +22,12 @@ function Home() {
         <Themes />
         <Schedule />
         <CallToAction />
-        <Sponsors />
+  <Prizes />
+  <Sponsors />
+        <Gallery />
         <Team />
-        <Prizes />
         <FAQ />
+        <Contact />
       </main>
       <Footer />
     </div>

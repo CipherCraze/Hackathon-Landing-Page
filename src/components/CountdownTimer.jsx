@@ -56,10 +56,10 @@ function CountdownTimer({ targetDate, className = '' }) {
       {timerBlocks.map((block) => (
         <div
           key={block.label}
-          className="rounded-2xl border border-white/10 bg-slate-950/60 px-6 py-6 text-center shadow-lg shadow-amber-500/10"
+          className="rounded-2xl border border-kasavu/25 bg-white/80 px-6 py-6 text-center shadow-[0_0_25px_rgba(232,185,35,0.25)]"
         >
-          <p className="text-4xl font-black tracking-tight text-white sm:text-5xl">{block.value}</p>
-          <p className="mt-2 text-xs uppercase tracking-[0.35em] text-amber-300">{block.label}</p>
+          <p className="text-4xl font-black tracking-tight text-charcoal sm:text-5xl">{block.value}</p>
+          <p className="mt-2 text-xs uppercase tracking-[0.35em] text-deepgreen">{block.label}</p>
         </div>
       ))}
     </div>
