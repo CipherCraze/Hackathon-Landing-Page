@@ -18,7 +18,7 @@ function Schedule() {
 
         <div className="relative mx-auto max-w-4xl rounded-[32px] border border-kasavu/25 bg-white/90 p-10 text-center shadow-kasavu">
           <div className="mx-auto flex max-w-2xl flex-col items-center gap-4">
-            <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Agenda status</p>
+            <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Agenda Status</p>
             <h3 className="text-2xl font-semibold text-charcoal">To be announced</h3>
             <p className="text-sm text-charcoal/70">
               Subscribe to our newsletter or follow @codekalari on social to be the first to know when the official schedule drops.
