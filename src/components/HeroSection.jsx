@@ -7,15 +7,15 @@ function HeroSection() {
   const targetDate = new Date('2026-01-10T10:00:00+05:30')
   const fixedPookalams = [
     // Increased opacity for clearer visibility
-    { left: '12%', top: '16%', size: 220, delay: 0, duration: 42, opacity: 0.5, rotateDir: 1 },
-    { left: '50%', top: '18%', size: 360, delay: 6, duration: 56, opacity: 0.5, rotateDir: -1 },
-    { left: '84%', top: '30%', size: 200, delay: 3, duration: 48, opacity: 0.5, rotateDir: 1 },
+    { left: '30%', top: '7%', size: 220, delay: 0, duration: 42, opacity: 0.3, rotateDir: 1 },
+    { left: '55%', top: '18%', size: 360, delay: 6, duration: 56, opacity: 0.2, rotateDir: -1 },
+    { left: '84%', top: '10%', size: 200, delay: 3, duration: 48, opacity: 0.3, rotateDir: 1 },
   ]
   
   return (
     <section
       id="hero"
-      className="min-h-screen relative isolate overflow-hidden bg-ivory pt-28 pb-24 sm:pt-32 sm:pb-32"
+      className="min-h-[10vh] relative isolate overflow-hidden bg-ivory pt-28 pb-24 sm:pt-32 sm:pb-32"
       style={{
         backgroundImage:
           'linear-gradient(rgba(15,81,50,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,81,50,0.05) 1px, transparent 1px)',
@@ -48,11 +48,11 @@ function HeroSection() {
         <div className="absolute -left-24 top-6 h-64 w-64 rounded-full border border-kasavu/25 opacity-40" />
         <div className="absolute -right-12 top-24 h-52 w-52 rounded-full border border-deepgreen/20 opacity-30" />
         <div className="absolute right-20 bottom-24 h-44 w-44 rounded-full border border-vermilion/15 opacity-30" />
-        <motion.span
+        {/*<motion.span
           className="absolute left-12 top-20 h-24 w-24 rounded-full border-2 border-kasavu/60"
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
-        />
+        />*/}
         <motion.span
           className="absolute right-12 top-36 h-16 w-16 rounded-full border border-saffron/40"
           animate={{ rotate: -360 }}
@@ -96,7 +96,7 @@ function HeroSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h1 className="font-heading text-6xl font-black leading-tight text-charcoal sm:text-7xl md:text-8xl lg:text-9xl">
+            <h1 className="font-heading text-6xl font-black leading-tight text-charcoal sm:text-7xl md:text-8xl lg:text-8xl">
           Code-Kalari
           <br />
           <span className=" bg-gradient-to-r from-kasavu via-saffron to-vermilion bg-clip-text text-transparent">
@@ -106,7 +106,7 @@ function HeroSection() {
             
             <a
           href="#register"
-          className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-10 py-5 text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-105"
+          className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-7 py-5 text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-90"
             >
           Register Now
             </a>
@@ -135,7 +135,7 @@ function HeroSection() {
         </motion.div>
 
         <motion.div
-          className="absolute top-4 right-4 z-40 lg:top-6 lg:right-8"
+          className="absolute top-8 right-4 z-40 lg:top-6 lg:right-8"
           initial={{ opacity: 0, y: -6 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -155,16 +155,17 @@ function HeroSection() {
         src="/images/Gemini_Generated_Image_hxessjhxessjhxes-removebg-preview.png"
         alt=""
         aria-hidden="true"
-        className="absolute left-4 bottom-4 pointer-events-none z-20 w-64 sm:w-80 md:w-[28rem] lg:w-[30rem] opacity-95"
+        className="absolute left-2 bottom-0 pointer-events-none z-20 w-64 sm:w-80 md:w-[28rem] lg:w-[30rem] opacity-95"
       />
 
       {/* bottom-right decorative image */}
       <img
-        src="/images/Generated_Image_October_05__2025_-_4_39PM-removebg-preview.png"
+        src="/images/m.png"
         alt=""
         aria-hidden="true"
-        className="absolute right-4 bottom-4 pointer-events-none z-20 w-28 sm:w-40 md:w-48 lg:w-[24rem]  opacity-95"
+        className="absolute right-1 bottom-0 pointer-events-none z-20 w-28 sm:w-40 md:w-48 lg:w-[50rem]  opacity-50"
       />
+      <hr className="absolute left-0 bottom-0 w-full h-1 bg-black opacity-50" />
 
     </section>
   )
