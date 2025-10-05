@@ -1,32 +1,39 @@
-import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { FiMusic, FiPlay, FiSunrise } from 'react-icons/fi'
-
-const stats = [
-  { label: 'Duration', value: '24 Hrs', copy: 'Immersive cultural sprint' },
-  { label: 'Creators', value: '200+', copy: 'Makers across Kerala & beyond' },
-  { label: 'Prize Pool', value: '₹ 30K', copy: 'Kasavu-lined accolades' },
-  { label: 'Culture Blend', value: '100%', copy: 'Tradition × Technology' },
-]
+import DotGrid from './DotGrid'
 
 function HeroSection() {
-  const [musicOn, setMusicOn] = useState(false)
   const fixedPookalams = [
-    { left: '12%', top: '56%', size: 220, delay: 0, duration: 42, opacity: 0.28, rotateDir: 1 },
-    { left: '50%', top: '18%', size: 360, delay: 6, duration: 56, opacity: 0.22, rotateDir: -1 },
-    { left: '84%', top: '30%', size: 200, delay: 3, duration: 48, opacity: 0.2, rotateDir: 1 },
+    // Increased opacity for clearer visibility
+    { left: '12%', top: '16%', size: 220, delay: 0, duration: 42, opacity: 0.5, rotateDir: 1 },
+    { left: '50%', top: '18%', size: 360, delay: 6, duration: 56, opacity: 0.5, rotateDir: -1 },
+    { left: '84%', top: '30%', size: 200, delay: 3, duration: 48, opacity: 0.5, rotateDir: 1 },
   ]
 
   return (
     <section
       id="hero"
-      className="relative isolate overflow-hidden bg-ivory pt-28 pb-24 sm:pt-32 sm:pb-32"
+      className="min-h-screen relative isolate overflow-hidden bg-ivory pt-28 pb-24 sm:pt-32 sm:pb-32"
       style={{
         backgroundImage:
           'linear-gradient(rgba(15,81,50,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,81,50,0.05) 1px, transparent 1px)',
         backgroundSize: '120px 120px',
       }}
     >
+      <div className="absolute inset-0 -z-20 opacity-40">
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#808080"
+          activeColor="#2596be"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+          className="pointer-events-none"
+        />
+      </div>
+
       <div className="absolute inset-0 -z-10">
         <div className="absolute left-1/2 top-1/2 h-[620px] w-[620px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pookalam-radial blur-3xl" />
         <div className="absolute -left-16 top-16 h-60 w-60 rounded-full bg-gradient-to-br from-kasavu/40 via-saffron/35 to-transparent blur-3xl" />
@@ -89,55 +96,21 @@ function HeroSection() {
             src="/images/pookalam.png"
             alt=""
             aria-hidden="true"
-            className="pointer-events-none absolute -left-24 -top-20 hidden w-80 opacity-30 blur-[0.3px] sm:block"
+            className="pointer-events-none absolute -left-24 -top-20 hidden w-80 opacity-60 blur-[0.3px] sm:block"
             initial={{ rotate: 0 }}
             animate={{ rotate: 360 }}
             transition={{ repeat: Infinity, duration: 42, ease: 'linear' }}
           />
-          <span className="inline-flex items-center gap-2 rounded-full border border-kasavu/40 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.45em] text-deepgreen">
-            Code-Kalari 2025
-          </span>
-          <h1 className="font-heading text-4xl font-black leading-tight text-charcoal sm:text-5xl lg:text-6xl">
-            Where Kerala&apos;s festival spirit meets future-forward code
-          </h1>
-          <p className="text-base text-charcoal/75 sm:text-lg">
-            Immerse in a 24-hour celebration of collaboration, craftsmanship, and culture. Build climate-ready solutions, smart
-            tourism tech, and heritage storytelling experiences inspired by the spirit of Onam.
-          </p>
-          <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="#register"
-              className="relative inline-flex items-center gap-2 overflow-hidden rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 py-3 text-sm font-bold uppercase tracking-widest text-charcoal shadow-kasavu transition hover:brightness-110"
-            >
-              <FiPlay className="text-lg" /> Register Now
-            </a>
-            <a
-              href="#themes"
-              className="group relative inline-flex items-center gap-3 rounded-full border border-deepgreen/15 bg-white/85 px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-deepgreen transition hover:border-saffron/70 hover:text-saffron"
-            >
-              Explore Tracks
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-kasavu/30 bg-kasavu/20 text-base text-deepgreen">
-                <FiSunrise />
-              </span>
-            </a>
-          </div>
+          
+          
+          
+          
 
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4">
-            {stats.map((item) => (
-              <div
-                key={item.label}
-                className="rounded-2xl border border-kasavu/25 bg-white/70 p-4 shadow-[inset_0_0_25px_rgba(232,185,35,0.15)]"
-              >
-                <p className="text-sm uppercase tracking-[0.35em] text-deepgreen">{item.label}</p>
-                <p className="mt-2 text-2xl font-bold text-charcoal">{item.value}</p>
-                <p className="text-xs text-charcoal/70">{item.copy}</p>
-              </div>
-            ))}
-          </div>
+          {/* stats removed for a cleaner, minimal hero */}
         </motion.div>
 
         <motion.div
-          className="relative mx-auto flex w-full max-w-lg justify-center lg:mx-0"
+          className="absolute top-6 right-6 z-30 w-full max-w-[420px] lg:top-8 lg:right-12"
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
@@ -146,44 +119,38 @@ function HeroSection() {
           <div className="relative w-full max-w-[420px] overflow-hidden rounded-[32px] border border-kasavu/35 bg-white/90 p-6 shadow-[0_0_45px_rgba(232,185,35,0.25)]">
             <div className="absolute inset-0 -z-10 bg-gradient-to-br from-kasavu/25 via-saffron/15 to-vermilion/20 blur-2xl" />
             <div className="space-y-6">
-              <div className="flex items-center justify-between">
-                <p className="text-sm font-semibold uppercase tracking-[0.35em] text-deepgreen">Countdown to Kalari</p>
-                <button
-                  type="button"
-                  onClick={() => setMusicOn((prev) => !prev)}
-                  className={`inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs uppercase tracking-[0.35em] transition ${
-                    musicOn
-                      ? 'border-vermilion/40 bg-vermilion/15 text-vermilion'
-                      : 'border-deepgreen/20 bg-deepgreen/10 text-deepgreen'
-                  }`}
-                >
-                  <FiMusic />
-                  {musicOn ? 'Onam Beats On' : 'Play Onam Beats'}
-                </button>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[{ label: 'Days' }, { label: 'Hours' }, { label: 'Minutes' }, { label: 'Seconds' }].map((item) => (
-                  <div key={item.label} className="rounded-2xl border border-kasavu/25 bg-white/80 px-5 py-6 text-center">
-                    <p className="text-4xl font-black text-charcoal">00</p>
-                    <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">{item.label}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-sm text-charcoal/70">
-                The Athapookalam ignites on 12 September 2025 · 9:00 AM IST at Kerala Arts & Craft Village, Trivandrum.
-                Remote creators can join via our virtual kalari.
-              </p>
-              <button
-                type="button"
-                className="w-full rounded-2xl border border-deepgreen/20 bg-gradient-to-r from-deepgreen/15 via-kasavu/20 to-saffron/20 px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-deepgreen transition hover:border-saffron/50 hover:text-saffron"
-              >
-                Download Full Schedule
-              </button>
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-[0.35em] text-deepgreen">Countdown to Kalari</p>
+                </div>
+                <div className="grid grid-cols-4 gap-3">
+                  {['Days', 'Hours', 'Minutes', 'Seconds'].map((label) => (
+                    <div key={label} className="flex flex-col items-center justify-center rounded-lg border border-kasavu/20 bg-white/85 px-3 py-3 text-center">
+                      <p className="text-xl font-black text-charcoal">00</p>
+                      <p className="text-[10px] uppercase tracking-[0.35em] text-deepgreen">{label}</p>
+                    </div>
+                  ))}
+                </div>
+                {/* compact: event details and extra controls intentionally removed to keep the hero minimal */}
             </div>
           </div>
         </motion.div>
       </div>
-      
+      {/* bottom-left decorative image */}
+      <img
+        src="/images/Gemini_Generated_Image_hxessjhxessjhxes-removebg-preview.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute left-4 bottom-4 pointer-events-none z-20 w-40 sm:w-56 md:w-72 lg:w-96 opacity-95"
+      />
+
+      {/* bottom-right decorative image */}
+      <img
+        src="/images/Generated_Image_October_05__2025_-_4_39PM-removebg-preview.png"
+        alt=""
+        aria-hidden="true"
+        className="absolute right-4 bottom-4 pointer-events-none z-20 w-28 sm:w-40 md:w-48 lg:w-64 opacity-95"
+      />
+
     </section>
   )
 }
