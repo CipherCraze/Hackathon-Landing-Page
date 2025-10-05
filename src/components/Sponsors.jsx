@@ -15,7 +15,7 @@ function Sponsors() {
           <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Sponsors</p>
           <h3 className="mt-4 text-2xl font-semibold text-charcoal">To be announced</h3>
           <p className="mt-3 text-sm text-charcoal/70">
-            Interested in collaborating? Drop us a note and we&apos;ll share the partner deck along with available slots.
+            Interested in collaborating with us? Drop us a note and we&apos;ll share the partner deck along with available slots.
           </p>
         </div>
 
