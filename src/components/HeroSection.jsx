@@ -53,11 +53,11 @@ function HeroSection() {
           animate={{ rotate: 360 }}
           transition={{ repeat: Infinity, duration: 18, ease: 'linear' }}
         />*/}
-        <motion.span
+        {/*<motion.span
           className="absolute right-12 top-36 h-16 w-16 rounded-full border border-saffron/40"
           animate={{ rotate: -360 }}
           transition={{ repeat: Infinity, duration: 22, ease: 'linear' }}
-        />
+        />*/}
         <motion.span
           className="absolute left-1/2 top-10 h-14 w-36 -translate-x-1/2 rounded-full bg-white/40 blur-3xl"
           animate={{ opacity: [0.35, 0.15, 0.35] }}
