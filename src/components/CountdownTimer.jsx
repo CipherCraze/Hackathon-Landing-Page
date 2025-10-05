@@ -27,7 +27,7 @@ const calculateTimeLeft = (targetDate) => {
   }
 }
 
-function CountdownTimer({ targetDate, className = '' }) {
+function CountdownTimer({ targetDate, className = '', compact = false }) {
   const fallbackDate = useMemo(() => {
     const date = new Date()
     date.setDate(date.getDate() + 31)
@@ -44,12 +44,35 @@ function CountdownTimer({ targetDate, className = '' }) {
     return () => clearInterval(interval)
   }, [targetDate, fallbackDate])
 
-  const timerBlocks = [
-    { label: 'Days', value: timeLeft.days },
-    { label: 'Hours', value: timeLeft.hours },
-    { label: 'Minutes', value: timeLeft.minutes },
-    { label: 'Seconds', value: timeLeft.seconds },
-  ]
+  const timerBlocks = compact
+    ? [
+        { label: 'D', value: timeLeft.days },
+        { label: 'H', value: timeLeft.hours },
+        { label: 'M', value: timeLeft.minutes },
+        { label: 'S', value: timeLeft.seconds },
+      ]
+    : [
+        { label: 'Days', value: timeLeft.days },
+        { label: 'Hours', value: timeLeft.hours },
+        { label: 'Minutes', value: timeLeft.minutes },
+        { label: 'Seconds', value: timeLeft.seconds },
+      ]
+
+  if (compact) {
+    return (
+      <div className="flex gap-2">
+        {timerBlocks.map((block) => (
+          <div
+            key={block.label}
+            className="flex flex-col items-center justify-center w-10 h-10 rounded-md bg-white/95 border border-kasavu/10"
+          >
+            <p className="text-sm font-extrabold text-charcoal">{block.value}</p>
+            <p className="text-[9px] uppercase tracking-widest text-deepgreen mt-0.5">{block.label}</p>
+          </div>
+        ))}
+      </div>
+    )
+  }
 
   return (
     <div className={`grid grid-cols-2 gap-4 sm:grid-cols-4 ${className}`}>
