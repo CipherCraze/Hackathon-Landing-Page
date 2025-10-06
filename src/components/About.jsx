@@ -1,6 +1,9 @@
 import CountdownTimer from './CountdownTimer'
 
 function About() {
+  // Program starts: January 10, 2026 at 10:00 AM IST
+  const eventDate = new Date('2026-01-10T10:00:00+05:30')
+  
   return (
     <section
       id="about"
@@ -29,13 +32,22 @@ function About() {
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
                 <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Venue</p>
-                <p className="text-lg font-semibold text-charcoal">Kerala Arts &amp; Craft Village, Trivandrum</p>
-                <p className="text-sm text-charcoal/70">Hybrid participation with VR backwater hub for remote teams.</p>
+                <p className="text-lg font-semibold text-charcoal">Indian Institute of Information Technology (IIIT) Kottayam</p>
+                <p className="text-sm text-charcoal/70">
+                  <a 
+                    href="https://maps.app.goo.gl/4V2MHdaJaE3gnfb98" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-deepgreen hover:text-saffron transition underline"
+                  >
+                    View on Google Maps
+                  </a>
+                </p>
               </div>
               <div>
                 <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Date</p>
-                <p className="text-lg font-semibold text-charcoal">12–13 September 2025</p>
-                <p className="text-sm text-charcoal/70">Lamp lighting at 9:00 AM IST · Demo night by the lotus pond.</p>
+                <p className="text-lg font-semibold text-charcoal">January 10, 2026</p>
+                <p className="text-sm text-charcoal/70">Program starts at 10:00 AM IST</p>
               </div>
             </div>
             <div className="rounded-2xl border border-kasavu/30 bg-ivory/80 p-6">
@@ -48,12 +60,12 @@ function About() {
         </div>
         <div className="space-y-6 rounded-[32px] border border-kasavu/25 bg-white/85 p-8 shadow-[0_0_45px_rgba(232,185,35,0.18)]">
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-semibold text-charcoal">Countdown to lamp lighting</h3>
+            <h3 className="text-lg font-semibold text-charcoal">Countdown to Code-Kalari 2026</h3>
             <span className="rounded-full border border-deepgreen/20 bg-deepgreen/10 px-3 py-1 text-xs uppercase tracking-[0.35em] text-deepgreen">
               Live
             </span>
           </div>
-          <CountdownTimer targetDate="2025-09-12T09:00:00" />
+          <CountdownTimer targetDate={eventDate} />
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               { label: 'Capacity', copy: '250 creators, designers & storytellers' },

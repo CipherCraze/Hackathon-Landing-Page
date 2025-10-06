@@ -15,7 +15,7 @@ function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-[10vh] relative isolate overflow-hidden bg-ivory pt-28 pb-24 sm:pt-32 sm:pb-32"
+      className="min-h-screen relative isolate overflow-hidden bg-ivory pt-32 pb-24 sm:pt-36 sm:pb-32 md:pt-40 md:pb-36"
       style={{
         backgroundImage:
           'linear-gradient(rgba(15,81,50,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,81,50,0.05) 1px, transparent 1px)',
@@ -96,17 +96,14 @@ function HeroSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h1 className="font-heading text-6xl font-black leading-tight text-charcoal sm:text-7xl md:text-8xl lg:text-8xl">
-          Code-Kalari
-          <br />
-          <span className=" bg-gradient-to-r from-kasavu via-saffron to-vermilion bg-clip-text text-transparent">
-            2026
-          </span>
+            <h1 className="font-heading font-black leading-tight text-charcoal">
+          <span className="block text-[clamp(2.75rem,5.5vw,6.5rem)]">Code-Kalari</span>
+          <span className="block text-[clamp(2rem,4.5vw,5.5rem)] bg-gradient-to-r from-kasavu via-saffron to-vermilion bg-clip-text text-transparent">2026</span>
             </h1>
             
             <a
           href="#register"
-          className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-7 py-5 text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-90"
+          className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 md:px-8 lg:px-10 py-3 md:py-4 text-lg md:text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-95"
             >
           Register Now
             </a>
