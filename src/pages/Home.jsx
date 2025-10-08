@@ -19,13 +19,13 @@ function Home() {
       <main className="space-y-0">
         <HeroSection />
         <About />
-        <Themes />
+        {/* <Themes /> 
         <Schedule />
         <CallToAction />
   <Prizes />
   <Sponsors />
         <Team />
-        <FAQ />
+        <FAQ />*/}
         <Contact />
       </main>
       <Footer />

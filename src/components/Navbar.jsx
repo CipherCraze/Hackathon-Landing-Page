@@ -2,12 +2,12 @@ import { FiMenu } from 'react-icons/fi'
 
 const navigationLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Tracks', href: '#themes' },
+  /*{ label: 'Tracks', href: '#themes' },
   { label: 'Schedule', href: '#schedule' },
   { label: 'Gallery', href: '#gallery' },
   { label: 'Prizes', href: '#prizes' },
   { label: 'Sponsors', href: '#sponsors' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'FAQ', href: '#faq' },*/
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -44,7 +44,7 @@ function Navbar() {
             href="#register"
             className="rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 py-2.5 text-sm font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-105"
           >
-            Register Now
+            Pre-Register Now
           </a>
         </div>
 

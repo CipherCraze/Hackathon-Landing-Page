@@ -23,7 +23,7 @@ function Team() {
             Our organiser introductions and mentor roster will go live soon. Follow our channels for the weekly reveal series.
           </p>
           <p className="mt-6 text-xs text-charcoal/55">
-            Want to volunteer or mentor? Write to hello@code-kalari.in with your focus area and availability.
+            Want to volunteer or mentor? Write to codekalari@iiitkottayam.ac.in with your focus area and availability.
           </p>
         </div>
       </div>

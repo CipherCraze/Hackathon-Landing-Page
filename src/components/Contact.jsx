@@ -13,11 +13,11 @@ function Contact() {
             Partners, mentors, volunteers, and media can reach us via the form. We respond within two working days. Participants can
             hop onto our Discord for faster coordination.
           </p>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-0.1 sm:grid-cols-2">
             <div className="rounded-3xl border border-deepgreen/15 bg-white/90 p-5">
               <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Email</p>
-              <a href="mailto:hello@code-kalari.in" className="mt-2 block text-lg font-semibold text-charcoal">
-                hello@code-kalari.in
+              <a href="mailto:codekalari@iiitkottayam.ac.in" className="mt-2 block text-lg font-semibold text-charcoal">
+                codekalari@iiitkottayam.ac.in
               </a>
               <p className="mt-2 text-xs text-charcoal/60">General enquiries &amp; speaker proposals</p>
             </div>
@@ -27,6 +27,20 @@ function Contact() {
                 discord.gg/code-kalari
               </a>
               <p className="mt-2 text-xs text-charcoal/60">Real-time updates &amp; team matchmaking</p>
+            </div>
+          </div>
+          
+          <div className="mt-6 rounded-3xl border border-kasavu/20 bg-gradient-to-r from-kasavu/10 via-saffron/5 to-vermilion/10 p-6">
+            <p className="text-xs uppercase tracking-[0.35em] text-deepgreen mb-3">Event Organizer</p>
+            <div className="space-y-2">
+              <h3 className="text-xl font-bold text-charcoal">Harsh Chauhan</h3>
+              <p className="flex items-center gap-2 text-sm text-charcoal/80">
+                <span className="text-deepgreen">📱</span>
+                <a href="tel:+919953944291" className="hover:text-saffron transition">
+                  +91 99539 44291
+                </a>
+              </p>
+              <p className="text-xs text-charcoal/60">For urgent queries and event coordination</p>
             </div>
           </div>
         </div>

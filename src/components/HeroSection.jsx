@@ -15,7 +15,7 @@ function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen relative isolate overflow-hidden bg-ivory pt-32 pb-24 sm:pt-36 sm:pb-32 md:pt-40 md:pb-36"
+      className="min-h-[90vh] relative isolate overflow-hidden bg-ivory pt-24 pb-16 sm:pt-28 sm:pb-20 md:pt-32 md:pb-24"
       style={{
         backgroundImage:
           'linear-gradient(rgba(15,81,50,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(15,81,50,0.05) 1px, transparent 1px)',
@@ -105,8 +105,13 @@ function HeroSection() {
           href="#register"
           className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 md:px-8 lg:px-10 py-3 md:py-4 text-lg md:text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-95"
             >
-          Register Now
+          Pre-Register Now
             </a>
+            
+            <p className="text-sm mt-4 bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent font-semibold italic tracking-wide">
+  🚧 This area is under active development — exciting updates coming soon!
+</p>
+
           </motion.div>
         </div>
 

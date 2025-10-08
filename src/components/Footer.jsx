@@ -4,11 +4,12 @@ import { BsCalendarDate } from 'react-icons/bs'
 
 const footerLinks = [
   { label: 'About', href: '#about' },
-  { label: 'Tracks', href: '#tracks' },
+  /*{ label: 'Tracks', href: '#tracks' },
   { label: 'Schedule', href: '#schedule' },
   { label: 'Prizes', href: '#prizes' },
   { label: 'Sponsors', href: '#sponsors' },
   { label: 'FAQ', href: '#faq' },
+   */{ label: 'Contact', href: '#contact' },
 ]
 
 const socials = [
@@ -68,8 +69,8 @@ function Footer() {
               </p>
               <p className="flex items-center gap-2">
                 <HiOutlineMail className="text-deepgreen h-5 w-5" />
-                <a href="mailto:hello@code-kalari.in" className="hover:text-saffron transition">
-                  hello@code-kalari.in
+                <a href="mailto:codekalari@iiitkottayam.ac.in" className="hover:text-saffron transition">
+                  codekalari@iiitkottayam.ac.in
                 </a>
               </p>
             </div>

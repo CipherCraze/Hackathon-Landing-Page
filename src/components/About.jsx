@@ -52,8 +52,12 @@ function About() {
             </div>
             <div className="rounded-2xl border border-kasavu/30 bg-ivory/80 p-6">
               <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Presented by</p>
-              <p className="text-lg font-semibold text-charcoal">
-                Kerala Digital Mission × CultureTech Collective · In partnership with Startup Mission Kerala.
+              <h3 className="text-xl font-bold text-charcoal">Harsh Chauhan</h3>
+              <p className="flex items-center gap-2 text-sm text-charcoal/80">
+                <span className="text-deepgreen">📱</span>
+                <a href="tel:+919953944291" className="hover:text-saffron transition">
+                  +91 99539 44291
+                </a>
               </p>
             </div>
           </div>

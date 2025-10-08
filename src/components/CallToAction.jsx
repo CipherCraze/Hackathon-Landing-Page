@@ -26,7 +26,7 @@ function CallToAction() {
             Apply to Participate
           </a>
           <a
-            href="mailto:hello@code-kalari.in"
+            href="mailto:codekalari@iiitkottayam.ac.in"
             className="inline-flex items-center rounded-full border border-deepgreen/20 bg-white/85 px-6 py-3 text-sm font-semibold uppercase tracking-[0.35em] text-deepgreen transition hover:border-saffron/60 hover:text-saffron"
           >
             Talk to Organisers

@@ -59,7 +59,7 @@ function FAQ() {
           <span className="text-xs font-semibold uppercase tracking-[0.35em] text-deepgreen">FAQs</span>
           <h2 className="font-heading text-3xl font-black sm:text-4xl">Answers from the kalari desk</h2>
           <p className="text-sm text-charcoal/75">
-            Can’t find what you need? Write to <a href="mailto:hello@code-kalari.in" className="underline decoration-dotted underline-offset-4">hello@code-kalari.in</a> or join our Discord for live updates.
+            Can’t find what you need? Write to <a href="mailto:codekalari@iiitkottayam.ac.in" className="underline decoration-dotted underline-offset-4">codekalari@iiitkottayam.ac.in</a> or join our Discord for live updates.
           </p>
         </div>
 
