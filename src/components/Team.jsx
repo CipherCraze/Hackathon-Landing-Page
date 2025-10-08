@@ -20,7 +20,7 @@ function Team() {
           <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Organising guild</p>
           <h3 className="mt-4 text-2xl font-semibold text-charcoal">To be announced</h3>
           <p className="mt-3 text-sm text-charcoal/70">
-            Our organiser introductions and mentor roster will go live soon. Follow our channels for the weekly reveal series.
+            Our organiser introductions and mentor roster will go live soon.
           </p>
           <p className="mt-6 text-xs text-charcoal/55">
             Want to volunteer or mentor? Write to codekalari@iiitkottayam.ac.in with your focus area and availability.
