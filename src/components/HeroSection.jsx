@@ -102,7 +102,9 @@ function HeroSection() {
             </h1>
             
             <a
-          href="#register"
+          href="https://docs.google.com/forms/d/e/1FAIpQLScxrMlnVmuEAVDZZNfHZyg-pgWL_2CwAaGEMWMs6y1yAvsyqw/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 md:px-8 lg:px-10 py-3 md:py-4 text-lg md:text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-95"
             >
           Pre-Register Now

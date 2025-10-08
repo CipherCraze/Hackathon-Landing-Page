@@ -1,5 +1,5 @@
 import { FaDiscord, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa'
-import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi'
+import { HiOutlineLocationMarker, HiOutlineMail,HiOutlinePhone } from 'react-icons/hi'
 import { BsCalendarDate } from 'react-icons/bs'
 
 const footerLinks = [
@@ -9,7 +9,7 @@ const footerLinks = [
   { label: 'Prizes', href: '#prizes' },
   { label: 'Sponsors', href: '#sponsors' },
   { label: 'FAQ', href: '#faq' },
-   */{ label: 'Contact', href: '#contact' },
+   { label: 'Contact', href: '#contact' },*/
 ]
 
 const socials = [
@@ -21,7 +21,7 @@ const socials = [
 
 function Footer() {
   return (
-    <footer className="relative border-t border-kasavu/25 bg-gradient-to-b from-ivory via-white to-ivory py-16 overflow-hidden">
+    <footer id="Footer" className="relative border-t border-kasavu/25 bg-gradient-to-b from-ivory via-white to-ivory py-16 overflow-hidden">
       {/* Decorative gradient blobs */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
         <div className="absolute left-0 bottom-0 h-64 w-64 rounded-full bg-gradient-to-tr from-kasavu/20 via-saffron/15 to-transparent blur-3xl" />
@@ -73,6 +73,13 @@ function Footer() {
                   codekalari@iiitkottayam.ac.in
                 </a>
               </p>
+              <p className="flex items-center gap-2">
+                    <HiOutlinePhone className="text-deepgreen h-5 w-5" />
+                      <a href="tel:9953944291" className="hover:text-saffron transition">
+                          Harsh Chauhan – 9953944291
+                      </a>
+              </p>
+
             </div>
           </div>
 

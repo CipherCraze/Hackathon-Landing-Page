@@ -1,14 +1,16 @@
 import { FiMenu } from 'react-icons/fi'
+import Footer from '../components/Footer'
 
 const navigationLinks = [
   { label: 'About', href: '#about' },
-  /*{ label: 'Tracks', href: '#themes' },
-  { label: 'Schedule', href: '#schedule' },
-  { label: 'Gallery', href: '#gallery' },
-  { label: 'Prizes', href: '#prizes' },
-  { label: 'Sponsors', href: '#sponsors' },
-  { label: 'FAQ', href: '#faq' },*/
-  { label: 'Contact', href: '#contact' },
+  // You can uncomment others if needed
+  // { label: 'Tracks', href: '#themes' },
+  // { label: 'Schedule', href: '#schedule' },
+  // { label: 'Gallery', href: '#gallery' },
+  // { label: 'Prizes', href: '#prizes' },
+  // { label: 'Sponsors', href: '#sponsors' },
+  // { label: 'FAQ', href: '#faq' },
+  { label: 'Contact', href: '#Footer' }, // This scrolls to Footer section
 ]
 
 function Navbar() {
@@ -39,9 +41,10 @@ function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-4 lg:flex">
-          
           <a
-            href="#register"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScxrMlnVmuEAVDZZNfHZyg-pgWL_2CwAaGEMWMs6y1yAvsyqw/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 py-2.5 text-sm font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-105"
           >
             Pre-Register Now

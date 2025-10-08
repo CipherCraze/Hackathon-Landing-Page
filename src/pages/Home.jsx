@@ -25,8 +25,8 @@ function Home() {
   <Prizes />
   <Sponsors />
         <Team />
-        <FAQ />*/}
-        <Contact />
+        <FAQ />
+        <Contact />*/}
       </main>
       <Footer />
     </div>
