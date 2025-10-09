@@ -143,6 +143,30 @@ function Footer() {
                 />
                 <span className="text-sm font-medium text-gray-700 group-hover:text-gray-900">Apply on Devfolio</span>
               </a>
+              <a
+                href="https://ethindia.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 px-4 py-3 mt-2 rounded-lg bg-white border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all"
+              >
+                <img 
+                  src="/images/ethindia-dark.png" 
+                  alt="ETHINDIA LOGO" 
+                  className="h-6 w-auto object-contain"
+                />
+              </a>
+              <a
+                //href="https://devfolio.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center gap-3 px-4 py-3 mt-2 rounded-lg bg-white border border-gray-200 hover:border-gray-300 hover:shadow-md transition-all"
+              >
+                <img 
+                  src="/images/Logo + LogoMark  - Filled On Light 1.png" 
+                  //alt="DEVFOLIO LOGO" 
+                  className="h-6 w-auto object-contain"
+                />
+              </a>
           </div>
         </div>
 
