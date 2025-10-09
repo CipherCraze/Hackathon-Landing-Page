@@ -13,10 +13,10 @@ const footerLinks = [
 ]
 
 const socials = [
-  { label: 'Discord', href: 'https://discord.gg/code-kalari', icon: <FaDiscord /> },
-  { label: 'Instagram', href: 'https://instagram.com/codekalari', icon: <FaInstagram /> },
-  { label: 'LinkedIn', href: 'https://linkedin.com/company/code-kalari', icon: <FaLinkedin /> },
-  { label: 'GitHub', href: 'https://github.com/code-kalari', icon: <FaGithub /> },
+  { label: 'Discord', href: 'https://discord.gg/eXAPM6u8', icon: <FaDiscord /> },
+  { label: 'Instagram', href: 'https://www.instagram.com/codekalari?utm_source=qr&igsh=aWU4dHJ5a254N3Zo', icon: <FaInstagram /> },
+  { label: 'LinkedIn', href: 'https://linkedin.com/company/code-https://www.linkedin.com/company/codekalari', icon: <FaLinkedin /> },
+  {/* label: 'GitHub', href: 'https://github.com/code-kalari', icon: <FaGithub />*/ },
 ]
 
 function Footer() {
@@ -38,8 +38,8 @@ function Footer() {
           <div className="space-y-6">
             <div>
               <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-kasavu via-saffron to-vermilion font-heading text-xl font-black text-charcoal shadow-lg">
-                  CK
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/0 shadow-none">
+                  <img src="/images/code-kalari-logo).png" alt="Code-Kalari logo" className="h-12 w-12 object-contain" />
                 </div>
                 <div>
                   <h3 className="font-heading text-xl font-black text-charcoal">
@@ -61,7 +61,14 @@ function Footer() {
             <div className="space-y-2 text-sm text-charcoal/70">
               <p className="flex items-center gap-2">
                 <HiOutlineLocationMarker className="text-deepgreen h-5 w-5" />
-                <span>IIIT Kottayam, Kerala</span>
+                <a
+                  href="https://maps.app.goo.gl/97wcHFSPR5UNQxw4A"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-charcoal hover:text-saffron transition"
+                >
+                  IIIT Kottayam, Kerala
+                </a>
               </p>
               <p className="flex items-center gap-2">
                 <BsCalendarDate className="text-deepgreen h-5 w-5" />
@@ -83,7 +90,7 @@ function Footer() {
             </div>
           </div>
 
-          {/* Quick links */}
+          {/* Quick links 
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-deepgreen">Quick Links</h4>
             <nav className="flex flex-col gap-3">
@@ -98,7 +105,7 @@ function Footer() {
               ))}
             </nav>
           </div>
-
+          */}
           {/* Social links */}
           <div>
             <h4 className="mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-deepgreen">Connect With Us</h4>

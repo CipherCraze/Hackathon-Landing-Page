@@ -18,8 +18,8 @@ function Home() {
       <Navbar />
       <main className="space-y-0">
         <HeroSection />
-        <About />
-        {/* <Themes /> 
+        {/* <About />
+        <Themes /> 
         <Schedule />
         <CallToAction />
   <Prizes />

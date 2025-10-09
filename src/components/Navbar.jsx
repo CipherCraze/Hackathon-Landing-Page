@@ -2,7 +2,7 @@ import { FiMenu } from 'react-icons/fi'
 import Footer from '../components/Footer'
 
 const navigationLinks = [
-  { label: 'About', href: '#about' },
+  //{ label: 'About', href: '#about' },
   // You can uncomment others if needed
   // { label: 'Tracks', href: '#themes' },
   // { label: 'Schedule', href: '#schedule' },
@@ -18,9 +18,7 @@ function Navbar() {
     <header className="sticky top-0 z-50 border-b border-kasavu/30 bg-ivory/95 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.08)]">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4">
         <a href="#hero" className="flex items-center gap-3 text-charcoal transition hover:opacity-80">
-          <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-kasavu via-saffron to-vermilion text-xl font-black uppercase tracking-widest text-charcoal shadow-lg">
-            CK
-          </span>
+          <img src="/images/code-kalari-logo).png" alt="Code-Kalari logo" className="h-12 w-12 rounded-xl shadow-lg object-contain" />
           <div className="leading-tight">
             <p className="text-xs font-bold uppercase tracking-[0.45em] text-deepgreen">Code-Kalari</p>
             <p className="font-heading text-lg font-bold text-charcoal">2026</p>
