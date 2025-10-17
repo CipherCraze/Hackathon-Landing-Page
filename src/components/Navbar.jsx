@@ -38,7 +38,7 @@ function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 lg:flex">
+        {/*<div className="hidden items-center gap-4 lg:flex">
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLScxrMlnVmuEAVDZZNfHZyg-pgWL_2CwAaGEMWMs6y1yAvsyqw/viewform?usp=header"
             target="_blank"
@@ -47,7 +47,7 @@ function Navbar() {
           >
             Pre-Register Now
           </a>
-        </div>
+        </div>*/}
 
         <button
           type="button"

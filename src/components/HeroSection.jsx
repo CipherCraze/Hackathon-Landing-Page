@@ -102,13 +102,13 @@ function HeroSection() {
             </h1>
             
             <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLScxrMlnVmuEAVDZZNfHZyg-pgWL_2CwAaGEMWMs6y1yAvsyqw/viewform?usp=header"
+          //href="https://docs.google.com/forms/d/e/1FAIpQLScxrMlnVmuEAVDZZNfHZyg-pgWL_2CwAaGEMWMs6y1yAvsyqw/viewform?usp=header"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-kasavu via-saffron to-vermilion px-6 md:px-8 lg:px-10 py-3 md:py-4 text-lg md:text-2xl font-bold uppercase tracking-widest text-charcoal shadow-lg transition hover:brightness-110 hover:scale-95"
             >
-          Pre-Register Now
-            </a>
+          Registeration opens soon           
+          </a>
             
             <p className="text-sm mt-4 bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent font-semibold italic tracking-wide">
   🚧 This area is under active development — exciting updates coming soon!
