@@ -23,8 +23,8 @@ function Contact() {
             </div>
             <div className="rounded-3xl border border-deepgreen/15 bg-white/90 p-5">
               <p className="text-xs uppercase tracking-[0.35em] text-deepgreen">Discord</p>
-              <a href="https://discord.gg/code-kalari" className="mt-2 block text-lg font-semibold text-charcoal">
-                discord.gg/code-kalari
+              <a href="https://discord.gg/jxhzqDDC4w" className="mt-2 block text-lg font-semibold text-charcoal">
+                discord.gg/jxhzqDDC4w
               </a>
               <p className="mt-2 text-xs text-charcoal/60">Real-time updates &amp; team matchmaking</p>
             </div>

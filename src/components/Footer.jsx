@@ -13,7 +13,7 @@ const footerLinks = [
 ]
 
 const socials = [
-  { label: 'Discord', href: 'https://discord.gg/eXAPM6u8', icon: <FaDiscord /> },
+  { label: 'Discord', href: 'https://discord.gg/jxhzqDDC4w', icon: <FaDiscord /> },
   { label: 'Instagram', href: 'https://www.instagram.com/codekalari?utm_source=qr&igsh=aWU4dHJ5a254N3Zo', icon: <FaInstagram /> },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/codekalari/', icon: <FaLinkedin /> },
   {/* label: 'GitHub', href: 'https://github.com/code-kalari', icon: <FaGithub />*/ },
